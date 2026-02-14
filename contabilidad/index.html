@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContaPro Enterprise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Botón Tema -->
+    <button id="themeToggle" class="theme-toggle">
+      <span class="theme-icon">🌙</span>
+    </button>
+
+    <div class="card">
+
+      <!-- Header -->
+      <div class="card-header">
+        <div class="avatar">
+          <img src="img/logo.png" alt="ContaPro logo">
+        </div>
+        <div class="header-info">
+          <h1 id="userName"></h1>
+          <p class="title" id="userTitle"></p>
+          <p class="location" id="userLocation"></p>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="card-section">
+        <h2>Acerca de la aplicación</h2>
+        <p id="userBio" class="bio"></p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="card-section">
+              <!-- Contacto -->
+      <div class="card-section">
+        <h2>Contacto</h2>
+
+        <div class="contact-item">
+          <span>📧</span>
+          <span id="userEmail"></span>
+          <button id="copyEmailBtn" class="btn btn-small">Copiar</button>
+        </div>
+
+        <div class="contact-item">
+          <span>📱</span>
+          <span id="userPhone"></span>
+          <button id="copyPhoneBtn" class="btn btn-small">Copiar</button>
+        </div>
+
+      </div>
+
+      <!-- Módulos -->
+      <div class="card-section">
+        <h2>Módulos</h2>
+        <div id="skillsList" class="skills-list"></div>
+        <button id="toggleSkills" class="btn btn-secondary">
+          Mostrar más
+        </button>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="card-section">
+        <h2>Conectar</h2>
+        <div id="socialLinks" class="social-links"></div>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="card-section">
+        <h2>Estadísticas</h2>
+        <div id="stats" class="stats-grid"></div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <p>Proyecto SENA - ContaPro Enterprise</p>
+      <script src="script.js"></script>
+</body>
+</html>
+

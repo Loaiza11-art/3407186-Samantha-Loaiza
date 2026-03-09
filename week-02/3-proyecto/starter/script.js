@@ -21,35 +21,35 @@
 // ============================================
 
 // TODO: Reemplaza "Mi Dominio" con el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "APP DE CONTABILIDAD PARA PYME'S";
 
 // TODO: Cambia "Nombre del elemento" por algo de tu dominio
 // Ejemplos con dominios no asignables:
 //   Planetario → "Sistema Solar en 3D"
 //   Acuario    → "Tiburón Ballena"
 //   Museo      → "La Gioconda (réplica)"
-const itemName = "Nombre del elemento";
+const itemName = "Historial de facturas";
 
 // TODO: Agrega una categoría, tipo o descripción corta (string)
 // Ejemplos con dominios no asignables:
 //   Planetario → showType = "Función inmersiva"
 //   Acuario    → habitat = "Océano Pacífico"
 //   Museo      → artStyle = "Renacimiento"
-const itemCategory = "Categoría del elemento";
+const itemCategory = "Gestión financiera";
 
 // TODO: Agrega un número relevante a tu dominio (integer o decimal)
 // Ejemplos con dominios no asignables:
 //   Planetario → capacity = 250
 //   Acuario    → tankVolume = 2_500_000
 //   Museo      → estimatedValue = 4_800_000
-const itemQuantity = 0; // reemplaza 0 con el número adecuado
+const itemQuantity = 39; // reemplaza 0 con el número adecuado
 
 // TODO: Agrega un boolean con prefijo semántico (is/has/can/should)
 // Ejemplos con dominios no asignables:
 //   Planetario  → isOpen = true
 //   Acuario     → isEndangered = false
 //   Museo       → isOnDisplay = true
-const isItemAvailable = false; // reemplaza con algo de tu dominio
+const isUserRegistered = true; // reemplaza con algo de tu dominio
 
 // TODO: Declara un valor null que signifique "no asignado aún"
 // en tu dominio
@@ -57,7 +57,7 @@ const isItemAvailable = false; // reemplaza con algo de tu dominio
 //   Planetario → currentGuide = null
 //   Acuario    → feedingSchedule = null
 //   Museo      → currentOwner = null
-const pendingValue = null; // cambia el nombre a algo de tu dominio
+const selectedCompany = null; // cambia el nombre a algo de tu dominio
 
 
 // ============================================
@@ -73,9 +73,11 @@ console.log("");
 // Ejemplo: console.log(`Título:     ${itemName}`);
 console.log(`Nombre:    ${itemName}`);
 console.log(`Categoría: ${itemCategory}`);
+
 // TODO: Agrega un console.log para itemQuantity
-// TODO: Agrega un console.log para isItemAvailable
-console.log("");
+// TODO: Agrega un console.log para isUserRegistered
+console.log(`Cantidad: ${itemQuantity}`);
+console.log(`Usuario registrado: ${isUserRegistered}`);
 
 
 // ============================================
@@ -85,7 +87,11 @@ console.log("--- Tipos de datos ---");
 
 // TODO: Usa typeof para mostrar el tipo de al menos 3 variables
 // Ejemplo: console.log("typeof itemName:    ", typeof itemName);
-console.log("typeof itemName:     ", typeof itemName);
+
+console.log("typeof itemName:", typeof itemName);
+console.log("typeof itemQuantity:", typeof itemQuantity);
+console.log("typeof isUserRegistered:", typeof isUserRegistered);
+
 // TODO: Agrega typeof para otras 2 variables
 console.log("");
 
@@ -93,7 +99,7 @@ console.log("");
 // ============================================
 // SECCIÓN 4: CONVERSIONES EXPLÍCITAS
 // ============================================
-console.log("--- Conversiones ---");
+
 
 // TODO: Realiza al menos UNA conversión explícita
 // Opciones:
@@ -106,7 +112,18 @@ console.log("--- Conversiones ---");
 // console.log("Valor como texto:", priceAsText);
 // console.log("typeof (convertido):", typeof priceAsText);
 
+
+
+
 // TODO: Agrega tu conversión aquí
+console.log("--- Conversiones ---");
+
+const quantityAsText = String(itemQuantity);
+
+console.log("Cantidad como texto:", quantityAsText);
+console.log("typeof convertido:", typeof quantityAsText);
+
+console.log("");
 
 console.log("");
 
@@ -121,7 +138,11 @@ console.log("--- Valor nulo ---");
 // console.log("Valor pendiente:", pendingValue);
 // console.log("typeof null:", typeof pendingValue);    // "object" ← bug histórico
 // console.log("¿Es null?:", pendingValue === null);    // true
-console.log("Valor pendiente:", pendingValue);
+
+console.log("Valor pendiente:", selectedCompany);
+console.log("typeof null:", typeof selectedCompany);
+console.log("¿Es null?:", selectedCompany === null);
+
 // TODO: Agrega typeof y la verificación === null
 console.log("");
 
